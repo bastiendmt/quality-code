@@ -1,10 +1,10 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Modern Clean Code',
+  tagline: 'My personal recommendations for modern clean code',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -70,7 +70,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
