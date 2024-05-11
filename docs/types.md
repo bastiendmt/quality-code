@@ -27,3 +27,33 @@ In TypeScript, declaring types saves me more time than it costs me:
 - ✅ Helps other people understand my code, which speeds up code reviews, reduces the risk of bugs, and accelerates future code changes.
 
 So types don’t just help ensure quality. They save me time
+
+## Repeated prefixes
+
+Group the related fields under an object.
+
+```ts
+type Driver = {
+  id: string;
+  // ❗This infers any combination of these 3 fields is valid.
+  // ❗The property name are repetitive.
+  // ❗The related fields aren't clearly grouped.
+  diversLicenseNumber?: string;
+  driversLicenseState?: string;
+  driversLicenseExpiration?: date;
+};
+
+type Driver = {
+  id: string;
+  // ✅ Now driver's license is still optional, but all fields are required if it exists.
+  // ✅ The property name aren't repetitive.
+  // ✅ The related fields are clearly grouped under a well-named object.
+  diversLicense?: {
+    number: string;
+    state: string;
+    expiration: date;
+  };
+};
+```
+
+[Source: Cory House](https://twitter.com/housecor/status/1787637488485380347/photo/1)
