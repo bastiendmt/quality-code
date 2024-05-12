@@ -1,4 +1,6 @@
-# Modern Clean Code
+# Quality Code
+
+My personal recommendations for quality & clean code.
 
 ## TODO
 

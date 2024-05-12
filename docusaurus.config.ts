@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Modern Clean Code',
-  tagline: 'My personal recommendations for modern clean code',
+  title: 'Quality Code',
+  tagline: 'My personal recommendations for quality & clean code',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -51,9 +51,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Modern Clean Code',
+      title: 'Quality Code',
       logo: {
-        alt: 'Modern Clean Code Logo',
+        alt: 'Quality Code Logo',
         src: 'img/logo.svg',
       },
       items: [
