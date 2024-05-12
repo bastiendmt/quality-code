@@ -57,3 +57,25 @@ type Driver = {
 ```
 
 [Source: Cory House](https://twitter.com/housecor/status/1787637488485380347/photo/1)
+
+## Deterministic types
+
+Avoid
+
+```ts
+type Response = {
+  status: 'success' | 'error';
+  data?: string;
+  error?: string;
+};
+```
+
+✅ Prefer
+
+```ts
+type Response =
+  | { status: 'success'; data: string }
+  | { status: 'error'; error: string };
+```
+
+This is because the type system can infer the type of the `data` and `error` fields from the value of `status`.
