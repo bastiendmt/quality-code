@@ -27,6 +27,7 @@
     "@docusaurus/module-type-aliases": "3.3.2",
     "@docusaurus/tsconfig": "3.3.2",
     "@docusaurus/types": "3.3.2",
+    "gh-pages": "^6.1.1",
     "typescript": "~5.4.5"
   },
   "browserslist": {
