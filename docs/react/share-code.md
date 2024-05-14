@@ -1,6 +1,4 @@
-# React
-
-## Share code in react
+# Share code
 
 3 ways to share code in React:
 

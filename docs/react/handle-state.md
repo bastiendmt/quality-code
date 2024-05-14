@@ -1,4 +1,4 @@
-# Handle state in React
+# Handle state
 
 | Name                | When to use it                               |
 | ------------------- | -------------------------------------------- |
