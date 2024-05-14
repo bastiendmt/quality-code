@@ -9,4 +9,4 @@ My personal recommendations for quality & clean code.
 - [ ] find a icon
 - [ ] update homepage
 - [ ] update header and footer
-- [ ] merge resources / articles
+- [x] merge resources / articles

@@ -19,4 +19,4 @@ Solution: Use one of these instead:
 
 Certains meta-frameworks like Next.js have built-in support for fetching data.
 
-More details on [acticles](./articles.md) which explains why fetching data with useEffect is generally a bad idea.
+More details on [Clean Architecture in React by Alex Kondov](https://alexkondov.com/full-stack-tao-clean-architecture-react/#fetching-data) which explains why fetching data with useEffect is generally a bad idea.
