@@ -68,6 +68,12 @@ type Response = {
   data?: string;
   error?: string;
 };
+
+// ❌ This type should not be allowed.
+const invalidResponse: Response = {
+  status: 'success',
+  error: 'Something went wrong',
+};
 ```
 
 ✅ Prefer
@@ -76,6 +82,16 @@ type Response = {
 type Response =
   | { status: 'success'; data: string }
   | { status: 'error'; error: string };
+
+// 💡 is not assignable to type Response
+const invalidResponse: Response = {
+  status: 'success',
+  error: 'Something went wrong',
+};
 ```
 
 This is because the type system can infer the type of the `data` and `error` fields from the value of `status`.
+
+_Also known as discriminated unions._
+
+[Source: Avindra Fernando](https://x.com/avindrafernando/status/1774805301134295106)
